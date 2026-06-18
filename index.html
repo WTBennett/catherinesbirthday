@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Tea Mission!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>☕ EMERGENCY TEA MISSION ☕</h1>
+
+    <h2>Help Sarah get her morning tea!</h2>
+
+    <div id="game">
+
+        <div class="status">
+            Items collected:
+            <span id="count">0</span>/4
+        </div>
+
+        <div class="items">
+
+            <button class="item" onclick="collect(this)">
+                🫖 Tea Bag
+            </button>
+
+            <button class="item" onclick="collect(this)">
+                ☕ Mug
+            </button>
+
+            <button class="item" onclick="collect(this)">
+                🔥 Kettle
+            </button>
+
+            <button class="item" onclick="collect(this)">
+                🥛 Milk
+            </button>
+
+        </div>
+
+        <button id="brewButton" onclick="makeTea()" disabled>
+            Brew Tea
+        </button>
+
+        <div id="teaAnimation"></div>
+
+    </div>
+
+    <div id="birthdayScreen" class="hidden">
+
+        <h1>🎉 HAPPY BIRTHDAY SARAH! 🎉</h1>
+
+        <p>
+            Congratulations! The tea has been successfully brewed.
+        </p>
+
+        <p>
+            Wishing you a fantastic birthday filled with happiness,
+            laughter, cake, tea and absolutely no urgent emails.
+        </p>
+
+        <p>
+            Thank you for being an amazing manager and making work
+            a better place every day.
+        </p>
+
+        <h2>Have an incredible year ahead! ☕🎂🎈</h2>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
