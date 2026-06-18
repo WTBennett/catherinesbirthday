@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #fff5e6,
+        #ffe0b2
+    );
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #5d4037;
+}
+
+h2 {
+    color: #6d4c41;
+}
+
+.status {
+    font-size: 24px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px;
+}
+
+.item {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: white;
+    transition: 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item.collected {
+    background: #c8e6c9;
+    text-decoration: line-through;
+}
+
+#brewButton {
+    padding: 20px 40px;
+    font-size: 22px;
+    border: none;
+    border-radius: 12px;
+    background: #795548;
+    color: white;
+    cursor: pointer;
+}
+
+#brewButton:disabled {
+    background: grey;
+    cursor: not-allowed;
+}
+
+#teaAnimation {
+    margin-top: 30px;
+    font-size: 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.confetti {
+    position: fixed;
+    font-size: 24px;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
